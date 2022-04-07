@@ -1,23 +1,38 @@
-def cm_to_mm(cm):
-    return cm * 10
-print(cm_to_mm(float(input())))
-
-def mm_to_cm(mm):
-    return mm / 10
-print(mm_to_cm(float(input())))
-
-def m_to_cm(m):
-    return m * 100
-print(m_to_cm(float(input())))
-
-def cm_to_m(cm):
-    return cm / 100
-print(cm_to_m(float(input())))
-
-def km_to_m(km):
-    return km * 1000
-print(km_to_m(float(input())))
-
-def m_to_km(m):
-    return m / 1000
-print(m_to_km(float(input())))
+input_unit = input()
+output_unit = input()
+if input_unit == "mm" and output_unit == "cm":
+    number = float(input()) / 10
+    print(f"{number} cm")
+if input_unit == "mm" and output_unit == "m":
+    number = float(input()) / 1000
+    print(f"{number} m")
+if input_unit == "mm" and output_unit == "km":
+    number = float(input()) / 1000000
+    print(f"{number} km")
+if input_unit == "cm" and output_unit == "mm":
+    number = float(input()) * 10
+    print(f"{number} mm")
+if input_unit == "cm" and output_unit == "m":
+    number = float(input()) / 100
+    print(f"{number} m")
+if input_unit == "cm" and output_unit == "km":
+    number = float(input()) / 100000
+    print(f"{number} km")
+if input_unit == "m" and output_unit == "mm":
+    number = float(input()) * 1000
+    print(f"{number} mm")
+if input_unit == "m" and output_unit == "cm":
+    number = float(input()) * 100
+    print(f"{number} cm")
+if input_unit == "m" and output_unit == "km":
+    number = float(input()) / 1000
+    print(f"{number} km")
+if input_unit == "km" and output_unit == "mm":
+    number = float(input()) * 1000000
+    print(f"{number} mm")
+if input_unit == "km" and output_unit == "cm":
+    number = float(input()) * 100000
+    print(f"{number} cm")
+if input_unit == "km" and output_unit == "m":
+    number = float(input()) * 1000
+    print(f"{number} m")
